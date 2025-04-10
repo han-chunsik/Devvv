@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS devvv CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER IF NOT EXISTS 'application'@'%' IDENTIFIED BY 'supersecret';
+GRANT ALL PRIVILEGES ON devvv.* TO 'application'@'%';
+FLUSH PRIVILEGES;
